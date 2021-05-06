@@ -118,9 +118,23 @@ main {
 .row-image {
     width: 24%;
 }
+
+.row-image-1 {
+    width: 19%;
+}
+
+.row-1 {
+    display:flex;
+    justify-content: space-between;
+}
 .mem-img-3 {
     width: 100%;
     height: auto;
+}
+
+.mem-img-4 {
+    width: 30%;
+    height: 100px;
 }
 .mem-link {
     display: flex;
@@ -159,48 +173,52 @@ main {
 .mem-text {
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 40px;
-    overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   line-height: 16px;     /* fallback */
-   max-height: 32px;      /* fallback */
-   -webkit-line-clamp: 2; /* number of lines to show */
-   -webkit-box-orient: vertical;
+    
 }
 
-#list-tab a:hover {
+.list-modify a:hover {
     color: orange;
-    border: 1px solid orange;
-    border-radius: 5px;
+    border: 1px solid orange!important;
+    border-radius: 5px!important;
 }
 
-#list-tab .active {
-    color: orange;
-    border: 1px solid orange;
-    border-radius: 5px;
-    background-color: white!important;
+
+.list-modify .active {
+    color: orange!important;
+    border-radius: 5px!important;
     font-weight: 600;
-}
+    background-color: white!important;
+    border: 1px solid orange!important;
+    margin: 0 5px!important;
 
-#list-tab a {
+}
+.list-modify a {
+    padding: 5px!important;
     border: none;
-    margin-left: 10px;
-    padding: 5px;
     text-align: center;
+    width: 15%;
 }
-
+.list-modify {
+    margin: 15px!important;
+    display: flex!important;
+    justify-content: flex-start;
+}
 .xem-them {
     background-image: linear-gradient(to right, orange, red);
     width: 20%;
     height: 40px;
     border-radius: 20px;
-    margin: 10px auto;
+    margin: 40px auto 20px;
     font-weight: 500;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow:1px 2px 10px -2px pink;
+}
+
+.xem-them:hover {
+    box-shadow: none;
 }
 
 .mem-info {
@@ -228,10 +246,6 @@ main {
     margin-right: 10px;
 }
 
-#list-tab {
-    width: 50%;
-    margin:10px;
-}
 
 a:link {
     text-decoration: none;
@@ -314,3 +328,38 @@ a:hover {
     width: 24%;
 }
 
+.ranking-cell {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.posi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.rank-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.list-ranking .active {
+    background-color: white!important;
+    color: #333333!important;
+}
+
+.list-ranking a {
+    border: none!important;
+    
+}
+.ranking-cell:hover {
+    border-right: 2px solid red;
+    box-sizing: content-box;
+}
+
+.ranking-cell-right {
+    display: flex;
+    justify-content: flex-start;
+}
