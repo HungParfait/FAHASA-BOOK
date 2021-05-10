@@ -1,11 +1,13 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box!important;
     margin: 0;
 }
 
 body {
-    background: #f8f6f0!important;
+    background: #e8e8e8!important;
     color: #333333;
+    font-family: 'Noto Sans JP', sans-serif!important;
+    font-size: 15px!important;
 }
 .container-custom {
     margin:auto;
@@ -16,6 +18,12 @@ body {
 main {
     width: 80%;
     margin:auto;
+}
+footer {
+    margin: 20px auto;
+    width: 80%;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
 }
 
 #nav-icon {
@@ -39,8 +47,7 @@ main {
 }
 .left-shift {
     color: orange;
-    position: absolute;
-    right: 40%;
+    margin-left: -80px;
 }
 .li-nav{
     color: orange;
@@ -65,11 +72,11 @@ main {
     margin-top: 20px;
 }
 #top-row-right {
-    width: 80%;
+    width: 75%;
 }
 
 #top-row-left {
-    width: 20%;
+    width: 25%;
     margin-right: 10px;
 }
 #top-row-right img {
@@ -109,6 +116,7 @@ main {
 .mem-img {
     width: 100%;
     height: auto;
+    padding: 10px;
 }
 .top-img {
     display: flex;
@@ -121,11 +129,16 @@ main {
 
 .row-image-1 {
     width: 19%;
+    padding: 5px;
+}
+
+.row-image-1:hover {
+    box-shadow:1px 1px 5px 1px pink;
 }
 
 .row-1 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .mem-img-3 {
     width: 100%;
@@ -134,6 +147,11 @@ main {
 
 .mem-img-4 {
     width: 30%;
+    height: 100px;
+}
+
+.mem-img-5 {
+    width: 9%;
     height: 100px;
 }
 .mem-link {
@@ -173,6 +191,9 @@ main {
 .mem-text {
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
     
 }
 
@@ -196,25 +217,24 @@ main {
     padding: 5px!important;
     border: none;
     text-align: center;
-    width: 15%;
 }
 .list-modify {
     margin: 15px!important;
     display: flex!important;
-    justify-content: flex-start;
+    justify-content: flex-start!important;
 }
 .xem-them {
     background-image: linear-gradient(to right, orange, red);
     width: 20%;
     height: 40px;
     border-radius: 20px;
-    margin: 40px auto 20px;
+    margin: 20px auto 0px!important;
     font-weight: 500;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow:1px 2px 10px -2px pink;
+    box-shadow:1px 2px 10px -1px pink;
 }
 
 .xem-them:hover {
@@ -268,13 +288,24 @@ a:hover {
     position: absolute;
     z-index: 200;
 }
-.fade-view i {
-    position: absolute;
-    left: 33%;
-}
+
 .li-nav:hover .fade-view {
     display: block;
 }
+#flag-language:hover .fade-view {
+    display: block;
+}
+
+#flag {
+    padding: 10px;
+    width: 150px;
+    height: 80px;
+    top: 62px;
+    right: 8%;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
 
 #notification {
     padding: 20px;
@@ -282,7 +313,7 @@ a:hover {
     height: 300px;
     border-radius: 15px;
     top: 70px;
-    right: 30%;
+    right: 28%;
 }
 #cart {
     padding: 20px;
@@ -309,6 +340,63 @@ a:hover {
 .tag-left:hover .show-table {
     display: flex;
 }
+.bo-qua {
+    width: 50%;
+    height: 34px;
+    border-radius: 17px;
+    border: 1px solid orange;
+    margin: 10px auto;
+    font-weight: 500;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-animation {
+    animation-name: gra-display;
+    animation-duration: 1s;
+}
+
+@keyframes gra-display {
+    0% {box-shadow: 0px 0px 0px 0px red}
+    100% {box-shadow: 0px 1px 0px 0px red;}
+}
+
+.hien-thi {
+    display: none; 
+    position: fixed; 
+    z-index: 250; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    padding-top: 60px;
+    color: #333333;
+}
+.dep {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+}
+
+
+#login-area button:hover{
+    animation-name: phinh-to;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes phinh-to {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.02);}
+    
+}
 
 .show-table {
     display: none;
@@ -316,8 +404,8 @@ a:hover {
     z-index: 200;
     position:absolute;
     flex-wrap: wrap;
-    top: 103px;
-    left: 25.5%;
+    top: 100px;
+    left: 30%;
     background-color: white;
     padding:10px;
     width: 70%;
@@ -355,11 +443,142 @@ a:hover {
     
 }
 .ranking-cell:hover {
-    border-right: 2px solid red;
-    box-sizing: content-box;
+    box-shadow: 1px 0px 0px 0px red;
 }
 
 .ranking-cell-right {
     display: flex;
     justify-content: flex-start;
+    line-height: 2rem!important;
+}
+
+.email-form {
+    background-color: rgb(3, 97, 109);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email-button {
+    width: 8%;
+    background-color: orange;
+    color: White;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: -105px;
+    height: 45%;
+    font-size: 15px;
+}
+
+[id ^='block-'] {
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+[id^='xem-them-'] a {
+    width: 20%!important;
+}
+
+#list-login .active {
+    box-shadow: 0px 1px 0px 0px red!important;
+    background-color: white!important;
+    color: orange!important;
+}
+
+#list-login a {
+    border: none;
+    border-radius: 0px!important;
+    text-align: center;
+}
+
+.show-cell p {
+    font-size: 12px;
+}
+
+#block-3 [class^="carousel-control-"] {
+    border: 1px solid gray;
+    width: 40px!important;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.carousel-my {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+
+.carousel-my-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+#block-3 .tab-content a {
+    position: inherit!important;
+}
+
+.giam-gia {
+    height: 200px!important;
+    border-radius: 50%;
+    color: white;
+    background-color: orange;
+}
+
+.mem-img-6 {
+    width: 50%;
+    height: auto;
+    margin: 6px;
+}
+
+
+#da-xem {
+    position: fixed;
+    top: 35%;
+    background-color: #796d6d;
+    color: white;
+    padding: 10px;
+    z-index:10;
+
+}
+
+#da-xem:hover {
+    background-color: orange;
+}
+
+#sp-da-xem {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+    z-index: 10;
+}
+
+#xem-them-le {
+    position: absolute;
+    bottom: 20px;
+    width: 100%
+}
+
+
+#xem-them-le:hover p{
+    animation-name: phinh-to;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
 }
