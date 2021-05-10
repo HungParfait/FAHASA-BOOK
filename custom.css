@@ -146,8 +146,8 @@ footer {
 }
 
 .mem-img-4 {
-    width: 30%;
-    height: 100px;
+    width: 25%;
+    height: auto;
 }
 
 .mem-img-5 {
@@ -210,19 +210,20 @@ footer {
     font-weight: 600;
     background-color: white!important;
     border: 1px solid orange!important;
-    margin: 0 5px!important;
 
 }
 .list-modify a {
     padding: 5px!important;
     border: none;
     text-align: center;
+    margin: 5px!important;
 }
 .list-modify {
-    margin: 15px!important;
+    margin: 5px 5px 5px 20px!important;
     display: flex!important;
     justify-content: flex-start!important;
 }
+
 .xem-them {
     background-image: linear-gradient(to right, orange, red);
     width: 20%;
@@ -419,13 +420,18 @@ a:hover {
 .ranking-cell {
     display: flex;
     justify-content: flex-start;
+    margin: 0px!important;
 }
 
 .posi {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
+    margin: 0 5px 0 20px;
+}
+
+.posi p {
+    font-weight: bold;
 }
 .rank-text {
     display: flex;
@@ -440,10 +446,10 @@ a:hover {
 
 .list-ranking a {
     border: none!important;
-    
 }
+
 .ranking-cell:hover {
-    box-shadow: 1px 0px 0px 0px red;
+    box-shadow: 2px 0px 0px 0px red;
 }
 
 .ranking-cell-right {
@@ -581,4 +587,21 @@ footer p {
     animation-duration: 0.2s;
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-fill-mode: forwards;
+}
+
+.list-group-item {
+    color: #333333!important;
+}
+
+hr {
+    margin: 5px!important;
+}
+
+.list-ranking{
+    padding-right: 0px!important;
+}
+
+#block-ranking .list-group-item {
+    margin-right: 0px!important;
+    padding-right: 0px!important;
 }
