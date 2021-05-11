@@ -20,21 +20,52 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto-Sans-JP">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
 
 <body>
     <header>
-        <div class="container-fluid bg-white">
-            <div id="top-ad">
-                <a href="#">
-                    <img class="top-image"
-                        src="https://cdn0.fahasa.com/media/wysiwyg/Thang-05-2021/BigSale1_header.png">
+        <div class="top-banner container-fluid" style="background-color: #6ed6ee;">
+            <a href="#" class="">
+                <img class='top-image' src="https://cdn0.fahasa.com/media/wysiwyg/Thang-05-2021/BigSale1_header.png">
+            </a>
+        </div>
+
+
+        <div class="" id="small-nav">
+            <p class="text-center">
+                <a class='' href='#'>
+                    <img id="brand-img-small" class="mem-img-small"
+                        src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png"
+                        alt="web-logo">
                 </a>
+            </p>
+            <div class="top-nav-small">
+                <i class="fas fa-bars text-white fa-2x "></i>
+                <input type='text' placeholder="Search" id="search-top-small">
+                <span class="left-shift" id="search-icon-small">
+                    <i class="fas fa-search fa-lg"></i>
+                </span>
+
+                <p class="chinh-p">
+                    <a class='' href='#'>
+                        <i class="fas fa-cart-plus fa-2x text-white"></i>
+                    </a>
+                </p>
+                <p class="chinh-p">
+                    <a class='' href='#'>
+                        <i class="far fa-user fa-2x text-white"></i>
+                    </a>
+                </p>
             </div>
+        </div>
+
+
+        <div class="bg-white" id="big-nav">
             <div class="header-nav bg-white container-custom">
-                <a class="" href="#" style="width: 15%; margin-right: 20px;">
+                <a class="brand-img" href="#">
                     <img id="brand-img" class="mem-img"
                         src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png"
                         alt="web-logo">
@@ -42,13 +73,13 @@
 
                 <input type="text" id="search-top" placeholder="Search">
                 <span class="left-shift" id="search-icon">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search fa-lg"></i>
                 </span>
 
                 <div class="" id="nav-icon">
                     <span class="li-nav">
 
-                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-bell fa-lg"></i>
                         <p class="chinh-p">THÔNG BÁO</p>
 
                         <div id="notification" class="fade-view bg-white">
@@ -61,7 +92,7 @@
                     </span>
 
                     <span class="li-nav">
-                        <i class="fas fa-cart-plus"></i>
+                        <i class="fas fa-cart-plus fa-lg"></i>
                         <p class="chinh-p">GIỎ HÀNG</p>
                         <div id="cart" class="fade-view bg-white">
                             <p style="text-align: center;color: #333333;">Bạn chưa có sản phẩm trong giỏ hàng</p>
@@ -70,7 +101,7 @@
                     </span>
 
                     <span class="li-nav" id="log-in">
-                        <i class="fas fa-sign-in-alt"></i>
+                        <i class="fas fa-sign-in-alt fa-lg"></i>
                         <p class="chinh-p">ĐĂNG NHẬP</p>
 
                     </span>
@@ -162,11 +193,13 @@
                 </div>
             </div>
         </div>
+
+
     </header>
 
     <main>
         <div id="top-row">
-            <div id="top-row-left" class="bg-light">
+            <div id="top-row-left" class="bg-white">
                 <div id="tag-1">
                     <p class="font-weight-bold text-white text-center chinh-p">
                         Danh mục sản phẩm
@@ -733,7 +766,7 @@
                     </div>
                 </div>
             </div>
-            <div id="top-row-right" class="bg-light">
+            <div id="top-row-right" class="bg-white">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -760,7 +793,7 @@
                 </div>
             </div>
         </div>
-        <div class="top-img bg-light">
+        <div class="top-img">
             <div class="row-image no-gutters">
                 <a href="#" class="mem-link-top">
                     <img class="mem-img-3"
@@ -1032,9 +1065,9 @@
                     </div>
                 </div>
             </div>
-            <div id="xem-them-1"> 
-                <p ><a href="#" class="xem-them">Xem thêm</a></p>
-        </div>
+            <div id="xem-them-1">
+                <p><a href="#" class="xem-them">Xem thêm</a></p>
+            </div>
         </div>
         <div id="block-2" class="bg-white">
             <div class="title-area">
@@ -1180,8 +1213,8 @@
                     </div>
                 </div>
             </div>
-            <div id="xem-them-2"> 
-                    <p ><a href="#" class="xem-them">Xem thêm</a></p>
+            <div id="xem-them-2">
+                <p><a href="#" class="xem-them">Xem thêm</a></p>
             </div>
         </div>
         <div id="block-3" class="bg-white">
@@ -1332,9 +1365,9 @@
                             </a>
                         </div>
                     </div>
-                    <div id="xem-them-5"> 
-                        <p ><a href="#" class="xem-them">Xem thêm</a></p>
-                </div>
+                    <div id="xem-them-5">
+                        <p><a href="#" class="xem-them">Xem thêm</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2473,9 +2506,9 @@
                     </div>
                 </div>
             </div>
-            <div id="xem-them-3"> 
+            <div id="xem-them-3">
                 <p><a href="#" class="xem-them">Xem thêm</a></p>
-        </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -2483,9 +2516,10 @@
             <h5 class="text-center text-white" style="margin-right:30px;"> <i class="fas fa-envelope"></i> ĐĂNG KÍ NHẬN
                 BẢN TIN
             </h5>
-            <input class="" type="email" placeholder="Nhập địa chỉ email của bạn"  name="email" 
+            <input class="" type="email" placeholder="Nhập địa chỉ email của bạn" name="email"
                 style="width: 50%;height: 52%;border-radius: 5px; font-size: 12px;border: none!important;padding-left: 20px;">
             <button class="email-button" onclick="myFunction()">Đăng Ký</button>
+
         </div>
         <div id="information-end" class="row bg-white" style="margin-top: 20px; padding-top: 30px;">
             <div id="address" class="col-4" style="border-right: 1px solid gray;">
