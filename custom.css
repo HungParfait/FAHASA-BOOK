@@ -130,6 +130,7 @@ footer {
 .row-image-1 {
     width: 19%;
     padding: 5px;
+    position: relative;
 }
 
 .row-image-1:hover {
@@ -146,7 +147,7 @@ footer {
 }
 
 .mem-img-4 {
-    width: 25%;
+    width: 20%;
     height: auto;
 }
 
@@ -522,6 +523,7 @@ footer p {
     display: flex;
     justify-content: flex-start;
     width: 50%;
+    position: relative;
 }
 
 
@@ -601,7 +603,51 @@ hr {
     padding-right: 0px!important;
 }
 
-#block-ranking .list-group-item {
+#ranking-table .list-group-item {
     margin-right: 0px!important;
     padding-right: 0px!important;
+}
+
+.mem-img-4-2 {
+    width: 30%;
+    height: auto;
+}
+
+ .row-image-1:before {
+    content: '50%';
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 10px;
+right: 10px;
+border-radius: 50%;
+text-align:center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.carousel-my:before {
+    content: '50%';
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+position: absolute;
+width: 50px;
+height: 50px;
+top: 0px;
+right: 50%;
+border-radius: 50%;
+text-align:center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.xem-them:hover {
+    color: white!important;
 }
