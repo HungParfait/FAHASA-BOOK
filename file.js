@@ -98,6 +98,18 @@
 
     }
     
+      
+      let x = window.matchMedia("(max-width: 505px)");
+      if (x.matches) { 
+        let overView = document.getElementById('over-view');
+        let address = document.getElementById('address');
+        let infoCompany = document.getElementById('info-company');
+        let loi = document.getElementById('loi');
+        overView.classList.remove('col-5');
+        address.classList.remove('col-4');
+        infoCompany.classList.remove('col-8');
+        loi.classList.remove('row');
+     }
 /*
     window.onclick = function (event) {
         let modal = document.getElementById('small-mover-father');

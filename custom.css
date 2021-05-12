@@ -296,6 +296,17 @@ footer {
     margin-right: 10px;
 }
 
+.anh-ben-trai {
+    width: 30%; 
+    margin: 0 10px 0px 50px;
+}
+.anh-ben-phai {
+    width: 70%;
+}
+
+.trai-phai {
+    display: flex;
+}
 
 a:link {
     text-decoration: none;
@@ -496,6 +507,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 -15px;
 
 }
 
@@ -770,7 +782,10 @@ header .chinh-p {
 .small-mover-effect .fas {
     margin-left:60px;
 }
-
+.over-view {
+    border-right: 1px solid gray; 
+    padding-right: 1px!important;
+}
 }
 @media (max-width: 1230px) {
     .container-custom, main, footer {
@@ -826,6 +841,67 @@ header .chinh-p {
     #search-top-small {
         width: 75%;
     }
-    
+
+@media (max-width: 505px) {
+    .top-img {
+        display: none;
+    }
+    .mem-link p {
+        font-size: 10px;
+    }
+    .mem-img-1 {
+        width: 100%;
+    }
+    .mem-link {
+        width: 20%;
+    }
+    .list-group-horizontal {
+        flex-direction: column!important;
+    }
+    [class^='anh-ben-'] {
+        width: 100%;
+    }
+    .anh-ben-trai {
+        margin: 10px;
+    }
+    .anh-ben-phai {
+        width: 100%;
+    }
+    .trai-phai {
+        flex-wrap: wrap;
+    }
+    #search-top-small {
+        width: 60%;
+    }
+
+    #detail-1 {
+        display: none;
+    }
+    .over-view {
+        width: 100%!important;
+        border: none;
+    }
+    .row-image-1 {
+        display: inline-block;
+        width: 45%;
+    }
+    .row-1 {
+        display: block;
+        overflow: auto;
+    }
+    .email-form input, button {
+        display: block;
+    }
+    .email-form button {
+        width: 100px;
+    }
+    #address {
+        padding: 0px 10px;
+        margin: 20px;
+    }
+    #info-company {
+        margin: 20px;
+    }
+}
   
 }
