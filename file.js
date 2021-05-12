@@ -52,15 +52,59 @@
 
     ranking.addEventListener('mouseover', function () {
         for (let i = 0; i < ele.length; i++) {
-            let target = document.getElementById(ele[i].href.replace(window.location.href + '#', ''));
-            target.classList.remove('show');
-            target.classList.remove('active');
+            let mytarget = document.getElementById(ele[i].href.replace(window.location.href + '#', ''));
+            mytarget.classList.remove('show');
+            mytarget.classList.remove('active');
         }
 
         let dich = document.getElementById(content.href.replace(window.location.href + '#', ''));
-        console.log(dich);
         dich.classList.add('show');
         dich.classList.add('active');
 
     })
+}
+
+{
+    function moveHorizontal() {
+        let smallMover = document.getElementById('small-mover-father');
+        let body = document.getElementsByTagName('body');
+        body[0].style.position = 'absolute';
+        body[0].style.left = '300px';
+        body[0].style.top = '0px';
+        body[0].style.overflow = 'scroll';
+        smallMover.style.display = 'block';
+    }
+
+    function cancel() {
+        let cancel = document.getElementById('small-mover-father');
+        let body = document.getElementsByTagName('body');
+        body[0].style.position = 'inherit';
+        cancel.style.display = 'none';
+
+    }
+
+    function expend1(str) {
+        let plus1 = document.getElementById('plus-1')
+        let xemThem = document.getElementById('xem-them-1-small')
+        if (str === 'fas fa-plus') {
+            plus1.classList.remove('fa-plus');
+            plus1.classList.add('fa-minus')
+            xemThem.style.display = 'block'
+        } else if (str === 'fas fa-minus') {
+            plus1.classList.remove('fa-minus');
+            plus1.classList.add('fa-plus')
+            xemThem.style.display = 'none'
+        }
+
+    }
+    
+/*
+    window.onclick = function (event) {
+        let modal = document.getElementById('small-mover-father');
+        if (event.target == modal) {
+            console.log('1');
+            modal.style.display = "none";
+        }
+    }
+*/
 }
