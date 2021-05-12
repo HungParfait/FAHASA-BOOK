@@ -405,6 +405,7 @@ a:hover {
     height: 100%; 
     padding-top: 60px;
     color: #333333;
+    background-color:rgb(47, 55, 56, 0.5);
 }
 .dep {
     background-color: #fefefe;
@@ -734,6 +735,42 @@ header .chinh-p {
     padding: 10px;
 }
 
+#small-mover-father {
+    position: fixed;
+    background-color:rgb(47, 55, 56, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 20;
+    display: none;
+}
+.small-mover-effect {
+    padding: 20px;
+    position: fixed;
+    width: 300px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    z-index: 20;
+}
+
+.small-mover-effect a {
+    color: #333333;
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.fa-plus, .fa-minus {
+    font-size: 12px;
+}
+.small-mover-effect .fas {
+    margin-left:60px;
+}
+
 }
 @media (max-width: 1230px) {
     .container-custom, main, footer {
@@ -786,4 +823,9 @@ header .chinh-p {
     .ben-le {
         display: none;
     }
+    #search-top-small {
+        width: 75%;
+    }
+    
+  
 }

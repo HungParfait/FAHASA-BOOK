@@ -43,7 +43,7 @@
                 </a>
             </p>
             <div class="top-nav-small">
-                <i class="fas fa-bars text-white fa-2x "></i>
+                <i class="fas fa-bars text-white fa-2x" onclick="moveHorizontal()"></i>
                 <input type='text' placeholder="Search" id="search-top-small">
                 <span class="left-shift" id="search-icon-small">
                     <i class="fas fa-search fa-lg"></i>
@@ -60,8 +60,130 @@
                     </a>
                 </p>
             </div>
+
+            <div id="small-mover-father">
+      
+                <div id='small-mover' class="small-mover-effect bg-white">
+
+                    <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/default.svg">
+                    <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/english.svg">
+                    <p>DANH MỤC SẢN PHẨM
+                        <i class="fas fa-times fa-lg" onclick="cancel()"></i>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            SÁCH TRONG NƯỚC
+                        </a>
+                        <i id='plus-1' class="fas fa-plus" onclick='expend1(this.className)'></i>
+                    <div id="xem-them-1-small" class="text-capitalize" style="font-size: 12px; display: none;">
+                        <div id="van-hoc">
+                            <p class="font-weight-bold">VĂN HỌC</p>
+                            <hr>
+                            <p>Tiểu thuyết</p>
+                            <hr>
+                            <p>Truyện ngắn - Tản văn</p>
+                            <hr>
+                            <p>light novel</p>
+                            <hr>
+                            <p>ngôn tình</p>
+                            <hr>
+                            <p class="font-italic text-warning">Xem thêm...</p>
+                        </div>
+                        <hr>
+                        <div id="tieu-su">
+                            <p class="font-weight-bold">TIỂU SỬ - HỒI KÝ</p>
+                            <hr>
+                            <p>Tiểu thuyết</p>
+                            <hr>
+                            <p>Truyện ngắn - Tản văn</p>
+                            <hr>
+                            <p>light novel</p>
+                            <hr>
+                            <p>ngôn tình</p>
+                            <hr>
+                            <p class="font-italic text-warning">Xem thêm...</p>
+                        </div>
+                        <hr>
+                        <div id="kinh-te">
+                            <p class="font-weight-bold">KINH TẾ</p>
+                            <hr>
+                            <p>Tiểu thuyết</p>
+                            <hr>
+                            <p>Truyện ngắn - Tản văn</p>
+                            <hr>
+                            <p>light novel</p>
+                            <hr>
+                            <p>ngôn tình</p>
+                            <hr>
+                            <p class="font-italic text-warning">Xem thêm...</p>
+                        </div>
+                        <hr>
+                    </div>
+                    </p>
+        
+                    <p class="">
+                        <a href="#">
+                            FOREIGN BOOKS
+                        </a>
+                        <i class="fas fa-plus" onclick='expend2()'></i>
+                    </p>
+        
+                    <p class="">
+                        <a href='#'>
+                            VPP - ĐỒ DÙNG HỌC SINH
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            ĐỒ CHƠI
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            LÀM ĐẸP - SỨC KHỎE
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            SẢN PHẨM THƯƠNG HIỆU
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            SẢN PHẨM THƯƠNG HIỆU
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            SẢN PHẨM THƯƠNG HIỆU
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            SẢN PHẨM THƯƠNG HIỆU
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            VPP - ĐỒ DÙNG HỌC SINH
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            ĐỒ CHƠI
+                        </a>
+                    </p>
+                    <p class="">
+                        <a href='#'>
+                            LÀM ĐẸP - SỨC KHỎE
+                        </a>
+                    </p>
+                </div>
+            </div>
+
         </div>
 
+        
 
         <div class="bg-white" id="big-nav">
             <div class="header-nav bg-white container-custom">
