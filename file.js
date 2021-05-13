@@ -131,6 +131,6 @@
         for(let k=0;k<5-x;k++) {
             danhGia[i].innerHTML = danhGia[i].innerHTML + '<i class="fas fa-star"></i>';
         }
-        danhGia[i].innerHTML = danhGia[i].innerHTML + ' (' + x + ')';
+        danhGia[i].innerHTML = danhGia[i].innerHTML + '<span style="color: orange;font-size: 13px;margin-left: 5px;">(' + x + ')</span>';
     }
 }
