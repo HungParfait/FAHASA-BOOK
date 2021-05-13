@@ -775,7 +775,7 @@ header .chinh-p {
 header .chinh-p {
     font-size: 12px;
 }
-[type='email'] {
+footer [type='email'] {
     width: 50%;
     height: 52%;
     border-radius: 5px; 
@@ -813,6 +813,12 @@ header .chinh-p {
     .show-table {
         left: 24%;
     }
+    .brand-img {
+        margin-left: 0px;
+    }
+    #search-top {
+        margin-left: -30px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -847,6 +853,33 @@ header .chinh-p {
     }
     .mem-link {
         width: 17%;
+    }
+    
+    .email-form input, button {
+        display: block;
+    }
+    .email-form button {
+        width: 100px;
+    }
+    #address {
+        padding: 0px 10px;
+        margin: 20px;
+    }
+    #info-company {
+        margin: 20px;
+    }
+    [id^='detail-'] {
+        display: none;
+    }
+    footer [type='email'] {
+        margin: 10px 0px;
+        height: 90%;
+        width: 80%;
+    }
+
+    .email-form {
+        height:150px;
+        padding: 10px;
     }
 }
 
@@ -907,31 +940,8 @@ header .chinh-p {
     .row-1 {
         display: block;
         overflow: auto;
+        height: 500px;
+        overflow: auto;
     }
-    .email-form input, button {
-        display: block;
-    }
-    .email-form button {
-        width: 100px;
-    }
-    #address {
-        padding: 0px 10px;
-        margin: 20px;
-    }
-    #info-company {
-        margin: 20px;
-    }
-    [id^='detail-'] {
-        display: none;
-    }
-    [type='email'] {
-        margin: 10px 0px;
-        height: 90%;
-        width: 80%;
-    }
-
-    .email-form {
-        height:150px;
-        padding: 10px;
-    }
+    
 }
