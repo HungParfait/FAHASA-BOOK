@@ -218,6 +218,7 @@ footer {
 }
 
 .mem-text {
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -272,7 +273,7 @@ footer {
 }
 
 .mem-info {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bolder;
     color: orange;
 }
@@ -754,6 +755,13 @@ header .chinh-p {
 
 .fa-plus, .fa-minus {
     font-size: 12px;
+}
+.checked {
+    color: yellowgreen!important;
+}
+.fa-star {
+    font-size: 14px;
+    color: gray;
 }
 .small-mover-effect .fas {
     margin-left:60px;

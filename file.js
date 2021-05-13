@@ -117,3 +117,20 @@
     }
 */
 }
+
+
+{
+    //thêm sao đánh giá
+    let danhGia = document.getElementsByClassName("row-image-1");
+    for (let i = 0;i<danhGia.length; i++) {
+        let x = Math.floor(Math.random() * 5) + 1;
+        danhGia[i].innerHTML = danhGia[i].innerHTML + '<br>';
+        for (let j = 0; j<x;j++) {
+            danhGia[i].innerHTML = danhGia[i].innerHTML + '<i class="fas fa-star checked"></i>';
+        }
+        for(let k=0;k<5-x;k++) {
+            danhGia[i].innerHTML = danhGia[i].innerHTML + '<i class="fas fa-star"></i>';
+        }
+        danhGia[i].innerHTML = danhGia[i].innerHTML + ' (' + x + ')';
+    }
+}
