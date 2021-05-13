@@ -67,11 +67,6 @@
 {
     function moveHorizontal() {
         let smallMover = document.getElementById('small-mover-father');
-        let body = document.getElementsByTagName('body');
-        body[0].style.position = 'absolute';
-        body[0].style.left = '300px';
-        body[0].style.top = '0px';
-        body[0].style.overflow = 'scroll';
         smallMover.style.display = 'block';
     }
 
